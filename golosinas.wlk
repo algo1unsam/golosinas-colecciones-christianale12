@@ -59,7 +59,9 @@ object chocolatin {
 object golosinabanada {
     
     var baniochocolate=4
-    var golosinabase = golosinabanada
+   
+   
+    var property golosinabase = golosinabanada
     method golosinabase(golosina){
         golosinabase=golosina
     }
@@ -69,6 +71,7 @@ object golosinabanada {
     method glutten() = golosinabase.tieneglutten()
     method comer () {golosinabase.mordisco()
     baniochocolate = (baniochocolate - 2).max(0)
+ 
 }
 }
 object pastilla {
@@ -134,6 +137,15 @@ object mariano{
 
     method gustosfaltantes(gustosdeseados) = self.gustosdeseados()
 
+    method baniar(unagolosina){ golosinabanada.golosinabase(unagolosina)
+    golosinas.add(golosinabanada)}
 
+
+    
+}
+
+class Golosina {
+  var property gusto = [chocolate,naranja,frutilla]
+	method sabor(gusto) = gusto
 
 }
