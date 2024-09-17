@@ -44,17 +44,17 @@ object obleas {
     method comer () {if(peso > 70){peso * 0.5}else peso-(peso *0.25)}
 }
 object chocolatin {
-    const property precior=0.5
-    var  property peso = 0
+    const property precio=0
+    var property gramo=0
     var property sabor= chocolate
-
+    
     const property glutten = false
-    var property valor=0
-    method precio() = valor * peso
+    
+    method precio() = 0.5 * gramo
  
     
 
-    method comer () {peso - 2}
+    method comer () {gramo - 2}
 }
 object golosinabanada {
     
